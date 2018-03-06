@@ -26,5 +26,9 @@ public abstract class Monster {
         return getAttackValue();
     }
 
+    public int incomingAttack(Army army){
+        return this.healthValue -= army.getAttackValue();
+    }
+
 
 }

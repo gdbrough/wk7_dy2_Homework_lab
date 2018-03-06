@@ -22,5 +22,13 @@ public abstract class Army {
         return this.attackValue;
     }
 
+    public int attackMonster(){
+        return getAttackValue();
+    }
+
+    public int incomingAttack(Monster monster){
+        return this.healthValue -= monster.getAttackValue();
+    }
+
 
 }
