@@ -22,5 +22,9 @@ public abstract class Monster {
         return this.attackValue;
     }
 
+    public int attackArmy(){
+        return getAttackValue();
+    }
+
 
 }
