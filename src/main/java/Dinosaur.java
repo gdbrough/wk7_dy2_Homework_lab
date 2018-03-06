@@ -1,6 +1,6 @@
-public class Godzilla extends Monster{
+public class Dinosaur extends Monster{
 
-    public Godzilla(String name, int healthValue, int attackValue) {
+    public Dinosaur(String name, int healthValue, int attackValue) {
         super(name, healthValue, attackValue);
     }
 

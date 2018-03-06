@@ -6,12 +6,12 @@ import static org.junit.Assert.assertEquals;
 public class TankTest {
 
     private Tank tank;
-    private KingKong kingKong;
+    private BigMonkey bigMonkey;
 
     @Before
     public void setUp() {
         tank = new Tank("Tanky McTankFace", 30, 10);
-        kingKong = new KingKong("King Kong", 20, 7);
+        bigMonkey = new BigMonkey("King Kong", 20, 7);
     }
 
     @Test
@@ -36,7 +36,7 @@ public class TankTest {
 
     @Test
     public void testHealthValueIsReducedAfterMonsterAttach(){
-        assertEquals(23, tank.incomingAttack(kingKong));
+        assertEquals(23, tank.incomingAttack(bigMonkey));
     }
 
 

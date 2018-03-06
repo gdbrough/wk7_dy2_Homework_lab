@@ -3,44 +3,44 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class GozillaTest {
+public class DinosaurTest {
 
-    private Godzilla godzilla;
+    private Dinosaur dinosaur;
     private Tank tank;
 
     @Before
     public void setUp() {
-        godzilla = new Godzilla("Gozilla", 10, 3);
+        dinosaur = new Dinosaur("Gozilla", 10, 3);
         tank = new Tank("Tanky McTankFace", 7, 6);
     }
     
     @Test
     public void testCanGetName(){
-        assertEquals("Gozilla", godzilla.getName());
+        assertEquals("Gozilla", dinosaur.getName());
     }
 
     @Test
     public void testCanGetHealthValue() {
-        assertEquals(10, godzilla.getHealthValue());
+        assertEquals(10, dinosaur.getHealthValue());
     }
 
     @Test
     public void testCanGetAttackValue() {
-        assertEquals(3, godzilla.getAttackValue());
+        assertEquals(3, dinosaur.getAttackValue());
     }
 
     @Test
     public void testCanAttackArmy() {
-        assertEquals(3, godzilla.attackArmy());
+        assertEquals(3, dinosaur.attackArmy());
     }
 
     @Test
     public void testHealthValueIsReducedAfterArmyAttach(){
-        assertEquals(4, godzilla.incomingAttack(tank));
+        assertEquals(4, dinosaur.incomingAttack(tank));
     }
 
     @Test
     public void testGozillaCanRoar() {
-        assertEquals("Gozilla roars", godzilla.roar());
+        assertEquals("Gozilla roars", dinosaur.roar());
     }
 }

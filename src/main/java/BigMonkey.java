@@ -1,6 +1,6 @@
-public class KingKong extends Monster{
+public class BigMonkey extends Monster{
 
-    public KingKong(String name, int healthValue, int attackValue) {
+    public BigMonkey(String name, int healthValue, int attackValue) {
         super(name, healthValue, attackValue);
     }
 
