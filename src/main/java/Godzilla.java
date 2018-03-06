@@ -4,5 +4,9 @@ public class Godzilla extends Monster{
         super(name, healthValue, attackValue);
     }
 
+    public String roar(){
+        return "Gozilla roars";
+    }
+
 
 }

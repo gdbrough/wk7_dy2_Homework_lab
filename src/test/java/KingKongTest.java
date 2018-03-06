@@ -20,6 +20,11 @@ public class KingKongTest {
     }
 
     @Test
+    public void testKingKongCanRoar() {
+        assertEquals("King Kong roars and beats his chest", kingKong.roar());
+    }
+
+    @Test
     public void testCanGetHealthValue() {
         assertEquals(15, kingKong.getHealthValue());
     }

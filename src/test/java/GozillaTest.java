@@ -39,6 +39,8 @@ public class GozillaTest {
         assertEquals(4, godzilla.incomingAttack(tank));
     }
 
-
-
+    @Test
+    public void testGozillaCanRoar() {
+        assertEquals("Gozilla roars", godzilla.roar());
+    }
 }
