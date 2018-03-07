@@ -39,6 +39,4 @@ public class TankTest {
         assertEquals(23, tank.incomingAttack(bigMonkey));
     }
 
-
-
 }
