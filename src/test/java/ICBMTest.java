@@ -31,7 +31,7 @@ public class ICBMTest {
 
     @Test
     public void testCanAttackMonster() {
-        assertEquals(100, icbm.attackMonster());
+        assertEquals(-80, icbm.attackMonster(bigMonkey));
     }
 
     @Test

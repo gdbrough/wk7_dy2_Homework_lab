@@ -30,13 +30,19 @@ public class BigMonkeyTest {
     }
 
     @Test
+    public void testCanSetHealthValue() {
+        bigMonkey.setHealthValue(10);
+        assertEquals(10, bigMonkey.getHealthValue());
+    }
+
+    @Test
     public void testCanGetAttackValue() {
         assertEquals(5, bigMonkey.getAttackValue());
     }
 
     @Test
     public void testCanAttackArmy() {
-        assertEquals(5, bigMonkey.attackArmy());
+        assertEquals(30, bigMonkey.attackArmy(tank));
     }
 
     @Test

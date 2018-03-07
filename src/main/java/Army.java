@@ -18,12 +18,18 @@ public abstract class Army {
         return this.healthValue;
     }
 
+    public void setHealthValue(int newHealthValue) {
+        this.healthValue = newHealthValue;
+    }
+
     public int getAttackValue() {
         return this.attackValue;
     }
 
-    public int attackMonster(){
-        return getAttackValue();
+    public int attackMonster(Monster monster){
+        int postAttackHealth = monster.getHealthValue() - getAttackValue();
+        monster.setHealthValue(postAttackHealth);
+        return monster.getHealthValue();
     }
 
     public int incomingAttack(Monster monster){

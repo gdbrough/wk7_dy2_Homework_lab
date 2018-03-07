@@ -31,7 +31,7 @@ public class DinosaurTest {
 
     @Test
     public void testCanAttackArmy() {
-        assertEquals(3, dinosaur.attackArmy());
+        assertEquals(4, dinosaur.attackArmy(tank));
     }
 
     @Test
