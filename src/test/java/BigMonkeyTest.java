@@ -42,7 +42,7 @@ public class BigMonkeyTest {
 
     @Test
     public void testCanAttackArmy() {
-        assertEquals(30, bigMonkey.attackArmy(tank));
+        assertEquals(30, bigMonkey.attack(tank));
     }
 
     @Test

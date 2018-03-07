@@ -31,7 +31,7 @@ public class TankTest {
 
     @Test
     public void testCanAttackMonster() {
-        assertEquals(10, tank.attackMonster(bigMonkey));
+        assertEquals(10, tank.attack(bigMonkey));
     }
 
     @Test

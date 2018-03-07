@@ -26,9 +26,8 @@ public abstract class Monster {
         return this.attackValue;
     }
 
-    public int attackArmy(Army army){
-        int postAttackHealth = army.getHealthValue() - getAttackValue();
-        army.setHealthValue(postAttackHealth);
+    public int attack(Army army){
+        army.setHealthValue(army.getHealthValue() - getAttackValue());
         return army.getHealthValue();
     }
 
